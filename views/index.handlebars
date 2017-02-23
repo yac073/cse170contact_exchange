@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Contact Exchange</title>
+    <link rel="stylesheet" href="/css/HomePage.css" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/HomePage.js"></script>
+</head>
+<body>
+    <nav id="nav_bar">
+        <ul id="nav_bar_content">
+            <li id="nav_bar_left">
+                <div class="menu_button" onclick="toggleSidebar()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </li>
+            <li id="nav_bar_middle">
+                <strong>Contacts</strong>
+            </li>
+            <li id="nav_bar_right">
+                <button id="new_contact_button" onclick="toggleNewContact()">
+                    <strong>+</strong>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="side_bar_mask" class="mask" hidden="hidden" onclick="toggleSidebar()"></div>
+
+    <nav id="side_bar">
+        <ul>
+            <li id="album">
+                <button id="album_face_border"></button>
+            </li>
+            <li id="name">
+                <strong>Xindi</strong>
+            </li>
+            <li id="another_folder" class="side_bar_folder">
+                <button id="view_profile" class="side_bar_button" onclick="changePageToMyProfile()">
+                    View my profile
+                </button>
+                <br>
+                <button id="groups" class="side_bar_button" onclick="changePageToGroups()">
+                    Groups
+                </button>
+            </li>
+            <li id="settings_folder" class="side_bar_folder">
+                <!-- <button id="setting" class="side_bar_button" onclick="changePageToSettings()">
+                    Settings
+                </button>
+                <br> -->
+                <button id="log_off" class="side_bar_button" onclick="logOff()">
+                    Log off
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="top_bar_mask" class="mask_top" hidden="hidden" onclick="toggleNewContact()"></div>
+
+    <nav id="top_bar">
+        <ul id="top_bar_content">
+            <li id="add_people" class="top_bar_element">
+                <button class="top_bar_button" onclick="changePageToAdd()">
+                    Add new contact
+                </button>
+            </li>
+            <li id="scan_QR" class="top_bar_element">
+                <button class="top_bar_button">
+                    Scan QR code
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <ul id="contact_list">
+            {{#each person}}
+                <li class="contact_item">
+                    <button id= "{{id}}" onclick="changePageToContact(this)">
+                        <img class="contact_img" src="{{imageURL}}">
+                        <strong>{{name}}</strong>
+                    </button>
+                </li>
+            {{/each}}
+        </ul>
+    </main>
+</body>
+</html>

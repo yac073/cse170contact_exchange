@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>My profile</title>
+	<link rel="stylesheet" href="/css/my_profile.css" />
+	<script
+  		src="https://code.jquery.com/jquery-3.1.1.min.js"
+  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous"></script>
+    <script src="/js/MyProfile.js"></script>
+</head>
+<body>
+	<nav id="nav_bar">
+		<ul id="nav_bar_content">
+			<li id="nav_bar_left">
+				<button id="back_button" class="click_button" onclick="backToIndex()">
+					<strong>Home</strong>
+				</button>
+			</li>
+			<li id="nav_bar_middle">
+				<strong>My profile</strong>
+			</li>
+			<li id="nav_bar_right">
+			</li>
+		</ul>
+	</nav>
+
+	<main>
+		<ul id="my-profile">
+			<li class="profile">
+				
+					<img  class="contact_img" src="res/test_user_face.png">
+					<p><strong>Xindi Li</strong></p>
+					<p>Phone	123-456-789</p>
+					<p>Email	xx@ucsd.edu</p>
+					<a href="https://www.facebook.com/" >
+						<h3>Facebook</h3>
+					</a>
+					<a href="https://www.linkedin.com/in/xindi-li-a504b8109/" >
+						<h3>LinkedIn</h3>
+					</a>
+
+			</li>
+			<li>
+				<button id="edit_profile" class="edit_button" onclick="editProfile()">
+					<strong>Edit</strong>
+				</button>
+			</li>
+		</ul>
+	</main>
+	</body>
+</html>

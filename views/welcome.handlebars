@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>User Sign in</title>
+	<link rel="stylesheet" href="/css/login.css" />
+	<script
+  		src="https://code.jquery.com/jquery-3.1.1.min.js"
+  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav id="nav_bar">
+		<ul id="nav_bar_content">
+			<li id="nav_bar_middle">
+				<strong>Welcome to Contact Exchange</strong>
+			</li>
+			<li id="nav_bar_right">
+			</li>
+		</ul>
+	</nav>
+	<main>
+		<ul id="search_package">
+			<li>
+				<input type="text" name="" placeholder="Enter your username or account number">
+			</li>
+			<li>
+				<input type="text" name="" placeholder="Enter your password">
+			</li>
+			<li>
+				<button id="login_button" class="login_button" onclick="gotoMainPage()">
+					<strong>Log in</strong>
+				</button>
+			</li>
+			<li>
+				<button id="create_new_button" class="create_button" onclick="">
+					<strong>Create an account</strong>
+				</button>
+			</li>
+		</ul>
+	</main>
+	<script type="text/javascript">
+		function gotoMainPage(){
+			window.location.replace("index.html");
+		}
+	</script>
+	</body>
+</html>
