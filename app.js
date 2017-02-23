@@ -21,6 +21,7 @@ var welcome = require('./routes/welcome');
 var addNewAccount = require('./routes/addNewAccount');
 var contact = require('./routes/contact');
 var selection = require('./routes/selectInfo');
+var confirm = require('./routes/confirm');
 
 // Example route
 // var user = require('./routes/user');
@@ -61,6 +62,8 @@ app.get('/welcome', welcome.view);
 app.get('/add-new-account', addNewAccount.view);
 app.get('/contact/:name', contact.viewContact);
 app.get('/select_info', selection.view);
+app.get('/confirm', confirm.view);
+
 // Example route
 // app.get('/users', user.list);
 
