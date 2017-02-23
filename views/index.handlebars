@@ -82,12 +82,18 @@
     <main>
         <ul id="contact_list">
             {{#each person}}
-                <li class="contact_item">
+                <div class="contact_item" id="{{id}}">
+                    <a href="contact/{{name}}" class="thumbnail">
+                        <img class="contact_img" src="{{imageURL}}"/>
+                            <strong>{{name}}</strong>
+                    </a>
+                </div>
+                <!--<li class="contact_item">
                     <button id= "{{id}}" onclick="changePageToContact(this)">
                         <img class="contact_img" src="{{imageURL}}">
                         <strong>{{name}}</strong>
                     </button>
-                </li>
+                </li>-->
             {{/each}}
         </ul>
     </main>

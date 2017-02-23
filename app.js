@@ -19,6 +19,7 @@ var searchResult = require('./routes/searchResult');
 var settings = require('./routes/settings');
 var welcome = require('./routes/welcome');
 var addNewAccount = require('./routes/addNewAccount');
+var contact = require('./routes/contact');
 
 // Example route
 // var user = require('./routes/user');
@@ -57,6 +58,7 @@ app.get('/search-result', searchResult.view);
 app.get('/settings', settings.view);
 app.get('/welcome', welcome.view);
 app.get('/add-new-account', addNewAccount.view);
+app.get('/contact/:name', contact.viewContact);
 // Example route
 // app.get('/users', user.list);
 

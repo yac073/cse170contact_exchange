@@ -2,38 +2,38 @@
 	"person": [
 		{
 			"id": "1",
-			"name": "Alice",
-			"phone": "Has awesome pet mice",
+			"name": "John Doe",
+			"phone": "123-456-789",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
 		},
 		{
 			"id": "2",
 			"name": "Ivan Sutherland",
-			"phone": "Great at sketching",
+			"phone": "123-456-789",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
 		},
 		{
 			"id": "3",
 			"name": "Lucy Suchman",
-			"phone": "Loves Trukese navigators",
+			"phone": "123-456-789",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"			
 		},
 		{
 			"id": "4",
 			"name": "Vannevar Bush",
-			"phone": "Has stellar associative memory",
+			"phone": "123-456-789",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"			
 		},
 		{
 			"id": "5",
 			"name": "Grace Hopper",
-			"phone": "Only friend with a Navy ship named after them",
+			"phone": "123-456-789",
 			"imageURL": "http://amhistory.si.edu/ogmt/images/upload/women-mathematicians/AHB2012q06025.jpg"
 		},
 		{
 			"id": "6",
 			"name": "Allen Newell",
-			"phone": "Really into psychology",
+			"phone": "123-456-789",
 			"imageURL": "http://uploads.edubilla.com/awards-winners/92/b4/allen-newell.jpg"
 		}
 	]
