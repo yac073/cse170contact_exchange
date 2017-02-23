@@ -20,6 +20,7 @@ var settings = require('./routes/settings');
 var welcome = require('./routes/welcome');
 var addNewAccount = require('./routes/addNewAccount');
 var contact = require('./routes/contact');
+var selection = require('./routes/selectInfo');
 
 // Example route
 // var user = require('./routes/user');
@@ -59,6 +60,7 @@ app.get('/settings', settings.view);
 app.get('/welcome', welcome.view);
 app.get('/add-new-account', addNewAccount.view);
 app.get('/contact/:name', contact.viewContact);
+app.get('/select_info', selection.view);
 // Example route
 // app.get('/users', user.list);
 

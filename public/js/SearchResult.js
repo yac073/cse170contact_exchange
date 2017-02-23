@@ -1,6 +1,11 @@
 ﻿function backToAddNewContactPage() {
     window.location.href = "add-new-account";
 }
+
+function selectInfoToSend() {
+    window.location.href = "select_info";
+}
+
 $.getJSON("people.json", function (data) {
     console.log(data);
     var i;
