@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <title>Search results</title>
+    <title>Select contact info</title>
 	<link rel="stylesheet" href="/css/search_result.css" />
 	<script
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -14,25 +14,25 @@
 	<nav id="nav_bar">
 		<ul id="nav_bar_content">
 			<li id="nav_bar_left">
-				<button id="back_button" class="click_button" onclick="backToAddNewContactPage()">
+				<button id="back_button" class="click_button" onclick="backToSelectInfo()">
 					<strong>Back</strong>
 				</button>
 			</li>
 			<li id="nav_bar_middle">
-				<strong>Search result</strong>
+				<strong>Confirmation</strong>
 			</li>
 			<li id="nav_bar_right">
-				<button id="next_button" class="click_button" onclick="selectInfoToSend()">
-					<strong>Next</strong>
+				<button id="next_button" class="click_button" onclick="donePage()">
+					<strong>Send</strong>
 				</button>
 			</li>
 		</ul>
 	</nav>
-	<main>
-		<ul id="result_list">
 
-		</ul>
+	<main>
+
 	</main>
-    <script src="/js/SearchResult.js"></script>
-	</body>
+	<script src="/js/confirm.js"></script>
+
+</body>
 </html>

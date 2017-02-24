@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <title>Search results</title>
+    <title>Select contact info</title>
 	<link rel="stylesheet" href="/css/search_result.css" />
 	<script
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -19,20 +19,29 @@
 				</button>
 			</li>
 			<li id="nav_bar_middle">
-				<strong>Search result</strong>
+				<strong>Select Information</strong>
 			</li>
 			<li id="nav_bar_right">
-				<button id="next_button" class="click_button" onclick="selectInfoToSend()">
+				<button id="next_button" class="click_button" onclick="confirmPage()">
 					<strong>Next</strong>
 				</button>
 			</li>
 		</ul>
 	</nav>
-	<main>
-		<ul id="result_list">
 
+	<main>
+		<ul id="contact_info_list">
+			
+			<form action="/action_page.php" method="get">
+  				<input type="checkbox" name="way" value="phone"> Phone Number<br>
+  				<input type="checkbox" name="way" value="email"> Email Address<br>
+  				<input type="checkbox" name="way" value="facebook"> Facebook<br>
+  				<input type="checkbox" name="way" value="linkedin"> LinkedIn<br>
+  				<!--<input type="submit" value="Submit"> -->
+			</form>
 		</ul>
 	</main>
-    <script src="/js/SearchResult.js"></script>
-	</body>
+    <script src="/js/select-info.js"></script>
+
+</body>
 </html>

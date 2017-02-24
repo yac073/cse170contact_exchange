@@ -1,5 +1,4 @@
-lab6
+Contact Exchange
 ====
 
-Lab 6: AJAX
 # cse170contact_exchange
