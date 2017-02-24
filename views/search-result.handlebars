@@ -9,6 +9,10 @@
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   		crossorigin="anonymous"></script>
+
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="/js/SearchResult.js"></script>
+  	
 </head>
 <body>
 	<nav id="nav_bar">
@@ -30,9 +34,15 @@
 	</nav>
 	<main>
 		<ul id="result_list">
-
+			{{#each person}}
+                <li class="search_item">
+                    <button id="{{id}}" onclick="requestAddToContact(this)">
+                        <img class="contact_img" src="{{imageURL}}">
+                        <strong>{{name}}</strong>
+                    </button>
+                </li>
+            {{/each}}
 		</ul>
 	</main>
-    <script src="/js/SearchResult.js"></script>
 	</body>
 </html>
