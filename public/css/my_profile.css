@@ -1,6 +1,9 @@
 img{
     width:50%;
     max-width:100px;
+    display: block;
+    margin: auto;
+    width: 40%;
 }
 
 body {
@@ -48,6 +51,10 @@ li {
 
 #nav_bar_middle{
 	width: 50%;
+	text-align: center;
+}
+
+#name{
 	text-align: center;
 }
 
