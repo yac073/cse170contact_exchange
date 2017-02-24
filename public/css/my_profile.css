@@ -1,6 +1,9 @@
 img{
     width:50%;
     max-width:100px;
+    display: block;
+    margin: auto;
+    width: 40%;
 }
 
 body {
@@ -51,8 +54,12 @@ li {
 	text-align: center;
 }
 
+#name{
+	text-align: center;
+}
+
 .profile{
-	text-align:center;
+	text-align:left;
 }
 
 .edit_button{
