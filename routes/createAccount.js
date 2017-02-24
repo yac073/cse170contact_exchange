@@ -26,15 +26,11 @@ exports.addAccount = function (req, res) {
             var id = userNum;
             var userName = name;
             var allData = {
-                id,
-                name,
-                userName,
-                selfInfos: {
-                    info: []
-                },
-                contacts: {
-                    contact: []
-                }
+                id:id,
+                name:name,
+                userName:userName,
+                selfInfos: [],
+                contacts: []
             };
             var json2 = JSON.stringify(allData);
             fs.writeFile(userJsonFileName, json2, 'utf8', function errorCallback(err) {

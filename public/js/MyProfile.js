@@ -47,9 +47,49 @@ function showFB(event){
 }
 
 function backToIndex() {
-    window.location.href = "/";
+    var url = window.location.href;
+    var index = url.indexOf("/my-profile/");
+    var idStr = url.substring(index + 12);
+    window.location.href = "/?id=" + idStr;
 }
 
 function editProfile() {
-    window.location.href = "edit-profile";
+    var url = window.location.href;
+    var index = url.indexOf("/my-profile/");
+    var idStr = url.substring(index + 12);    
+    window.location.href = "../edit-profile/" + idStr;
+}
+
+function infoClick(elem) {
+
+}
+
+function togglePublic(elem) {
+    var $buttonClicked = $(elem);
+    var id = $buttonClicked.attr("id");
+    var url = window.location.href;
+    var index = url.indexOf("/my-profile/");
+    var idStr = url.substring(index + 12);
+    if ($buttonClicked.text() == "public") {
+        $buttonClicked.text("private");
+        $.get('/togglePublicGeneral/' + id + '/' + idStr);
+    } else {
+        $buttonClicked.text("public");
+        $.get('/togglePublicGeneral/' + id + '/' + idStr);
+    }
+}
+
+function remove(elem) {
+    var $buttonClicked = $(elem);
+    var id = $buttonClicked.attr("id");
+    var url = window.location.href;
+    var index = url.indexOf("/my-profile/");
+    var idStr = url.substring(index + 12);
+    var lis = document.querySelectorAll('#buttonContainer');
+    for (var i = 0; i < lis.length; i++) {
+        if ($(lis[i]).attr(id) == id) {
+            lis[i].parentNode.removeChild(lis[i]);
+            break;
+        }
+    }
 }

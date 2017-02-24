@@ -44,7 +44,10 @@ function toggleNewContact() {
 }
 
 function changePageToAdd() {
-    window.location.href = "add-new-account";
+    var url = window.location.href;
+    var index = url.indexOf("?id=");
+    var idStr = url.substring(index + 4);
+    window.location.href = "add-new-account/" + idStr;
 }
 
 function changePageToMyProfile() {

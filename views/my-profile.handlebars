@@ -29,16 +29,36 @@
 
 	<main>
 		<ul id="my-profile">
-			<li class="profile">
-				<img class="contact_img" src="http://lorempixel.com/500/500/people/">
-				<h2 id = "name"><strong>Xindi Li</strong></h2>
-					<p id = "phone"><strong>Phone(Home)</strong></p>
-					<p id = "email"><strong>Email</strong></p>
-					<p id = "fb"><strong>Facebook</strong></p>
-			</li>
+            <li><img class="contact_img" src="http://lorempixel.com/500/500/people/"></li>
+            <li>
+                <h3 id="name">{{name}}</h3>
+            </li>
+            <li>
+                <ul id="buttonContainer">
+                    {{#each selfInfos}}
+                    <li id="{{id}}" class="profile">
+                        <div id="big{{id}}" class="infoButton" onclick="infoClick(this)">
+                            <ul class="contacts">
+                                <li class="left">{{Title}}</li>
+                                <li class="right">{{Subtitle}}</li>                                
+                            </ul>
+                            <ul id="sub{{id}}" class="contacts">
+                                <li class="left">{{content}}</li>
+                                <li class="rightsmall">
+                                    <button id="{{id}}" class="click_button2" onclick="togglePublic(this)">{{public}}</button>
+                                </li>
+                                <li class="rightsmall">
+                                    <button id="{{id}}" class="click_button3" onclick="remove(this)">delete</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </li>
 			<li>
 				<button id="edit_profile" class="edit_button" onclick="editProfile()">
-					<strong>Edit</strong>
+					<strong>Add more contact information</strong>
 				</button>
 			</li>
 		</ul>

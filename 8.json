@@ -1,0 +1,24 @@
+{
+  "id": 8,
+  "name": "4",
+  "userName": "4",
+  "selfInfos": [
+    {
+      "Title": "1",
+      "Subtitle": "1",
+      "content": "111",
+      "public": "public",
+      "deleted": "0",
+      "id": 1
+    },
+    {
+      "Title": "2",
+      "Subtitle": "2",
+      "content": "222",
+      "public": "public",
+      "deleted": "0",
+      "id": 2
+    }
+  ],
+  "contacts": []
+}

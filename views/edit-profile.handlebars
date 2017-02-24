@@ -20,18 +20,32 @@
 				</button>
 			</li>
 			<li id="nav_bar_middle">
-				<strong>Edit my profile</strong>
+				<strong>Add profile</strong>
 			</li>
 			<li id="nav_bar_right">
 			</li>
 		</ul>
 	</nav>
-
-<form id="frm1" action="/action_page.php">
-  Name: <input type="text" name="name"><br>
-  Phpne: <input type="text" name="phone"><br><br>
-  Email: <input type="text" name="email"><br><br>
-  <input type="button" onclick="myFunction()" value="Submit">
-</form>
+    <main>
+        <ul id="input_thing">
+            <li>
+                <strong>Title</strong>
+                <input id ="title" type="text" name="" placeholder="Example: Phone">  
+            </li>
+            <li>
+                <strong>Subtitle</strong>
+                <input id="sub" type="text" name="" placeholder="Example: Home">
+            </li>
+            <li>
+                <strong>Content</strong>
+                <input id="con" type="text" name="" placeholder="Example: 123-456-7890">
+            </li>
+            <li>
+                <button class="click_button" onclick="add()">
+                    Add
+                </button>
+            </li>
+        </ul>
+    </main>
 	</body>
 </html>

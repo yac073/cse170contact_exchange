@@ -92,3 +92,54 @@ main {
 	margin-top: 51px;
 	padding: 15px;
 }
+
+.contacts{
+    display: flex;
+}
+
+.contacts > li{
+    margin-bottom:0;
+}
+
+.infoButton {
+    width:calc(100% - 20px);
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid black;
+    line-height: 24px;
+    padding: 0 10px;
+    outline: none;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+}
+
+.left {
+    width: 50%;
+    text-align: left;
+}
+.right {
+    left:50%;
+    width: 50%;
+    text-align: right;
+}
+.rightsmall{
+    width:25%;
+    text-align:center;
+}
+#name{
+    text-align:center;
+}
+
+.click_button2 {
+    background-color: lightpink;
+    border-radius: 5px;
+    border: 1px solid black;    
+    padding: 5px;
+    outline: none;
+    transition: all 0.2s;
+    -webkit-user-select: none;
+}
+
+.click_button2:active {
+    background-color: rgba(150, 150, 150, 0.3);
+}

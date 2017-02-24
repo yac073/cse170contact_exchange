@@ -55,17 +55,19 @@ app.get('/create-account', createAccount.view);
 app.get('/accountCreated/:userName/:pa', createAccount.addAccount)
 app.get('/accountCreatName/:userName', createAccount.checkName)
 app.get('/loginProcess/:userName/:pa', login.checkLogin)
-app.get('/edit-profile', editProfile.view);
+app.get('/edit-profile/:id', editProfile.view);
+app.get('/edit-profile/:id/:title/:sub/:con', editProfile.add);
 app.get('/groups', groups.view);
 app.get('/login', login.view);
 app.get('/my-profile/:id', myProfile.view);
 app.get('/search-result', searchResult.view);
 app.get('/settings', settings.view);
 app.get('/welcome', welcome.view);
-app.get('/add-new-account', addNewAccount.view);
+app.get('/add-new-account/:id', addNewAccount.view);
 app.get('/contact/:name', contact.viewContact);
 app.get('/select_info', selection.view);
 app.get('/confirm', confirm.view);
+app.get('/togglePublicGeneral/:idi/:id',myProfile.togglePublic);
 
 // Example route
 // app.get('/users', user.list);

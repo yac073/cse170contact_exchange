@@ -1,1 +1,7 @@
-{"id":3,"name":"aaa","userName":"aaa","selfInfos":{"info":[]},"contacts":{"contact":[]}}
+{
+  "id": 3,
+  "name": "aaa",
+  "userName": "aaa",
+  "selfInfos": [],
+  "contacts": []
+}

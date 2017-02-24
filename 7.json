@@ -1,0 +1,40 @@
+{
+  "id": 7,
+  "name": "3",
+  "userName": "3",
+  "selfInfos": [
+    {
+      "Title": "phone",
+      "Subtitle": "home",
+      "content": "123",
+      "public": "public",
+      "deleted": "0",
+      "id": 1
+    },
+    {
+      "Title": "facebook",
+      "Subtitle": "me",
+      "content": "jflksdjflka",
+      "public": "0",
+      "deleted": "0",
+      "id": 2
+    },
+    {
+      "Title": "lol",
+      "Subtitle": "lol",
+      "content": "lol",
+      "public": "0",
+      "deleted": "0",
+      "id": 3
+    },
+    {
+      "Title": "123",
+      "Subtitle": "123",
+      "content": "123",
+      "public": "public",
+      "deleted": "0",
+      "id": 4
+    }
+  ],
+  "contacts": []
+}
