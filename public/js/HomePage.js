@@ -48,7 +48,10 @@ function changePageToAdd() {
 }
 
 function changePageToMyProfile() {
-    window.location.href = "my-profile";
+    var url = window.location.href;
+    var index = url.indexOf("?id=");
+    var idStr = url.substring(index + 4);
+    window.location.href = "my-profile/" + idStr;
 }
 
 function changePageToGroups() {

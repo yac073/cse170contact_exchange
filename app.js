@@ -58,7 +58,7 @@ app.get('/loginProcess/:userName/:pa', login.checkLogin)
 app.get('/edit-profile', editProfile.view);
 app.get('/groups', groups.view);
 app.get('/login', login.view);
-app.get('/my-profile', myProfile.view);
+app.get('/my-profile/:id', myProfile.view);
 app.get('/search-result', searchResult.view);
 app.get('/settings', settings.view);
 app.get('/welcome', welcome.view);

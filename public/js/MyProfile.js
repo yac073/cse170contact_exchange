@@ -1,6 +1,6 @@
 ﻿
 $(document).ready(function() {
-	initializePage();
+    initializePage();
 })
 
 /*
@@ -10,9 +10,9 @@ function initializePage() {
 
 	$("#phone").click(showPhone);
 	$("#email").click(showEmail);
-	$("#fb").click(showFB);
-  
-  }
+    $("#fb").click(showFB);  
+}
+
 function showPhone(event){
     $(this).append("<p>123-456-789</p>");
     var btn_pub = document.createElement("BUTTON");        
