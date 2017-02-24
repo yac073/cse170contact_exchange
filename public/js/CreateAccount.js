@@ -16,6 +16,11 @@ function preprocess() {
 }
 window.onpaint = preprocess();
 function next() {
+    if (step == 1) {
+        var $name = document.getElementById('account_name');
+        var name = $name.value;
+        $.get('/accountCreatName/' + name, setName);
+    }
     step++;
     if (step == 2) {
         var $rm3 = $("#prev_button");
@@ -63,6 +68,15 @@ function next() {
         }
     }
 
+}
+
+function setName(result) {
+    if (result == -1) {
+        prev();
+        alert("User name has been used! Change another one!");
+        var $name = document.getElementById('account_name');
+        $name.value = '';
+    }
 }
 function prev() {
     step--;

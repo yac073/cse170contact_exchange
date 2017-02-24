@@ -53,6 +53,8 @@ app.get('/', index.view);
 app.get('/log-off', logOff.view);
 app.get('/create-account', createAccount.view);
 app.get('/accountCreated/:userName/:pa', createAccount.addAccount)
+app.get('/accountCreatName/:userName', createAccount.checkName)
+app.get('/loginProcess/:userName/:pa', login.checkLogin)
 app.get('/edit-profile', editProfile.view);
 app.get('/groups', groups.view);
 app.get('/login', login.view);
@@ -71,3 +73,4 @@ app.get('/confirm', confirm.view);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+

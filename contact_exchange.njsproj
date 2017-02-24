@@ -33,6 +33,7 @@
     <Content Include="check-setup.sh" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />
+    <Content Include="people2.json" />
     <Content Include="people.json" />
     <Content Include="Procfile" />
     <Content Include="projects.json" />

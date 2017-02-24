@@ -94,8 +94,8 @@ li {
 
 #top_bar{
 	position: fixed;
-	width: 150px
-	height:40px;
+	width: 150px;
+	height: 40px;
 	top:-70px;
 	right: 0px;
 	background-color: white;
