@@ -29,6 +29,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="allUserEmPa.json" />
     <Content Include="check-setup.sh" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />

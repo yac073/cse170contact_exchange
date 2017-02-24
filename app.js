@@ -49,6 +49,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/log-off', logOff.view);
 app.get('/create-account', createAccount.view);
+app.get('/accountCreated/:userName/:pa', createAccount.addAccount)
 app.get('/edit-profile', editProfile.view);
 app.get('/groups', groups.view);
 app.get('/login', login.view);

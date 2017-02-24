@@ -1,4 +1,7 @@
 ﻿var step = 1;
+
+
+
 function backToWelcome() {
     window.location.href = "login";
 }
@@ -27,14 +30,24 @@ function next() {
         var $perviousDisplay = $("#account_password");
         var $currentDisplay = $("#account_password_again");
         var $rm3 = $("#next_text");
-        $perviousDisplay.addClass("finishDisplay");
-        $currentDisplay.removeClass("finishDisplay");
-        $rm3.text("Finish!");
-        document.getElementById("account_password_again").focus();
+        var $pass = document.getElementById('account_password');
+        var passText = $pass.value;
+        if (passText.length < 4) {
+            alert("Password is too short! Please at least include 4 characters!")
+            $pass.value = '';
+            prev();
+        } else {
+            $perviousDisplay.addClass("finishDisplay");
+            $currentDisplay.removeClass("finishDisplay");
+            $rm3.text("Finish!");
+            document.getElementById("account_password_again").focus();
+        }
     }
     if (step == 4) {
+        var $user = document.getElementById('account_name');
         var $pass = document.getElementById('account_password');
         var $passAgain = document.getElementById('account_password_again');
+        var userName = $user.value;
         var passText = $pass.value;        
         var passAgainText = $passAgain.value;        
         if (!(passText == passAgainText)) {
@@ -45,6 +58,7 @@ function next() {
             step = 3;
             prev();
         } else {
+            $.get('/accountCreated/' + userName + '/' + passText);
             window.location.href = "/";
         }
     }
